@@ -1,0 +1,109 @@
+body{
+    /* display: block; */
+    background-image: linear-gradient(to right, #4a536b, #394158);
+    height: 100vh;
+}
+
+
+#headDiv{
+    text-align: center;
+    width: 30%;
+    margin: 0 35%;
+    background-color: #aed6dc;
+    padding: 5px;
+    height: fit-content;
+    box-shadow: #2f2f31 5px 5px 5px;
+    border: #ffffff 2px solid;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+#tasksDiv{
+    text-align: center;
+    width: 30%;
+    margin: 0 35%;
+    background-color: #aed6dc;
+    padding: 5px;
+    height: fit-content;
+    box-shadow: #2f2f31 5px 5px 5px;
+    border: #ffffff 2px solid;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+  font-size: 22px;
+  color: #333333;
+  text-align: start;
+  
+  
+}
+
+form{
+    margin: 20px;
+}
+
+.submit{
+
+    position: relative;
+    cursor: text;
+    width:60%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 16px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    border-radius: 3px;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    :focus {
+        border-color: #3c4fe0;
+        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+    }
+
+}
+
+
+
+.submitButton{display: inline-block;
+    height: 48px;
+outline: none;
+cursor: pointer;
+font-weight: 600;
+border-radius: 3px;
+padding: 12px 24px;
+border: 0;
+color: #3a4149;
+background: #e7ebee;
+line-height: 1.15;
+font-size: 16px;
+:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+}
+
+#checkbox{
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px;
+  
+}
+
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    color: #ff9a8d;
+    text-shadow: #4a536b 2px 2px;
+    
+}
+
+h2{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #ffffff;
+    text-shadow: #4a536b 2px 2px;
+}
+

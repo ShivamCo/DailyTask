@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style/style.css">
+  <title>To-Do-List</title>
+</head>
+
+<body>
+  <main>
+    <div id="headDiv">
+      <h1>To-Do-List</h1>
+
+      <% if(locals.date && locals.todayName) {%>
+        <h2>
+          <%= date %>
+        </h2>
+        <h2>
+          <%= todayName %>
+        </h2>
+
+        <% } else { %>
+
+          <h2>Nil</h2>
+
+
+          <% } %>
+
+
+    </div>
+    <div id="tasksDiv">
+      
+      <% if(locals.tasks){ %>
+      <% for(i=0; i < tasks.length; i++){ %>  
+          <input type="checkbox" id="checkbox" >
+          <label for="checkbox"> <%= tasks[i].task %> </label><br>
+
+        <% } %>
+      <% } else { %>
+        <p>Nil</p>
+      <% } %>
+
+
+
+
+
+     <form action="/submit" method="post">
+       <input type="text" class="submit" name="task"></input>
+       <input type="submit" class="submitButton" value="+ Add Task"></input>
+     </form>
+    </div>
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>
